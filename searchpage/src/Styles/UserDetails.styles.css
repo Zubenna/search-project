@@ -1,0 +1,39 @@
+
+.name-container {
+    display: flex;
+    background-color: #333232;
+    padding: 10px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.name-container:hover {
+    background-color: rgb(114, 113, 111);
+}
+
+.name-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.name-box h2, .name-box p {
+  color: #fff;
+}
+
+.name-box h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.name-box P {
+ font-size: 13px;
+}
+
+.name-container img {
+    border-radius: 5px;
+    margin-right: 10px;
+}

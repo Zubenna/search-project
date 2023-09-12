@@ -1,23 +1,40 @@
-import './App.css';
+import {useState} from "react";
+import SearchList from "./components/SearchList";
+import { FaSearch } from "react-icons/fa";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+
+    const [input, setInput] = useState("");
+    const [results, setResults] = useState([]);
+
+    const fetchData = (value) => {
+        fetch(`http://localhost:4050/user/searchUser/${value}`).then((response) => response.json()).then((namelist) => {
+            const data = namelist.results;
+            setResults(data)
+        });
+       
+    };
+
+    const handleChange = (value) => {
+        setInput(value);
+        fetchData(value);
+    };
+
+    return (
+        <div className="App">
+          <div className="input-wrapper">
+          <FaSearch id="search-icon" />
+            <input placeholder="Search Name..." type="search"
+                value={input}
+                onChange={
+                    (event) => handleChange(event.target.value)
+                }/>
+            </div>
+            <SearchList results={results}/>
+        </div>
+    );
 }
 
 export default App;

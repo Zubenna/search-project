@@ -1,0 +1,7 @@
+.name-list {
+    width: 40%;
+    max-height: 60vh;
+    background-color: #dbdad7;
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
