@@ -8,7 +8,7 @@ const SearchList = ({results}) => (
         {
         results.map((foundname) => {
             return (
-                <div>
+                <div key={foundname.ggId}>
                 <UserDetails foundname ={foundname}/>
                 </div>
             );
