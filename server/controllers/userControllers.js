@@ -16,7 +16,7 @@ const createUser = async (req, res) => {
   };
 
   const getRecentUsers = async (req, res) => {
-    const users = await User.find();
+    const users = await User.find().limit(10);
     if (users) return res.send(users);
     return res.status(400).json({ msg: 'Error getting recent users' });
   };
