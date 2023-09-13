@@ -6,8 +6,13 @@ const UserDetails = ({foundname}) => {
 
     const {name, username, professionalHeadline, imageUrl} = foundname;
 
+
+    // const runfunction = () => {
+    //     console.log("Link was clicked")
+    // }
+   
     return (
-        <Link className="userlink" to={`https://torre.ai/${username}`} >
+        <Link className="userlink"   to={`https://torre.ai/${username}`}>
 
             <div className="name-container">
                 {
@@ -43,7 +48,7 @@ const UserDetails = ({foundname}) => {
                     <h2>{name}</h2>
                     <p>{professionalHeadline}</p>
                 </div>
-            </div>
+                </div>
         </Link>
     )
 }

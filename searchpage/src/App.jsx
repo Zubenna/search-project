@@ -37,7 +37,7 @@ const App = () => {
         }
         setIsShown(false);
       }
-      
+
     return (
         <div className="App" onClick={handleMouseClick}>
           <div className="input-wrapper" >

@@ -2,11 +2,12 @@ const express = require('express')
 const routes = require('./routes/apiRoutes');
 const dotenv = require('dotenv')
 const cors = require('cors')
+const connectDB = require('./config/db');
 dotenv.config('.env')
 
 
 const app = express()
-
+connectDB();
 const corsOptions = {
  origin: '*',
  optionsSuccessStatus: 200

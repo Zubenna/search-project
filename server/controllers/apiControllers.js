@@ -3,8 +3,6 @@ const userSearchUrl = 'https://arda.torre.co/entities/_search';
 
 const searchName = async (req, res) => {
        const {dename} = req.params;
-       console.log("In Searchname query", dename)
-
         const data = {                
         query: `${dename}`,
         identityType: "person",
@@ -12,7 +10,6 @@ const searchName = async (req, res) => {
         meta: true,
         excludeContacts: true
         }
-
     try {
         const response = await fetch(`${userSearchUrl}`, {
             method: "POST",
