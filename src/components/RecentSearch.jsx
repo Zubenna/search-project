@@ -8,7 +8,7 @@ const RecentSearch = () => {
     const [recent, setRecent] = useState([]);
 
     const fetchRecent = () => {
-      fetch(`http://localhost:4050/user/getSavedUsers/`).then((response) => response.json()).then((recentlist) => {
+      fetch(`https://torre-search-backend.onrender.com/user/getSavedUsers/`).then((response) => response.json()).then((recentlist) => {
         setRecent(recentlist)
     }, []);
     }

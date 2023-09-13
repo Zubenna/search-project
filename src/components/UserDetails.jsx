@@ -14,7 +14,7 @@ const UserDetails = ({foundname}) => {
                 imageUrl
             }
             try {
-                const response = await fetch(`http://localhost:4050/user/saveUser/`, {
+                const response = await fetch(`https://torre-search-backend.onrender.com/user/saveUser/`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

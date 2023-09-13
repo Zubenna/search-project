@@ -9,7 +9,7 @@ const Home = () => {
     const [results, setResults] = useState([]);
 
     const fetchData = (value) => {
-        fetch(`http://localhost:4050/user/searchUser/${value}`).then((response) => response.json()).then((namelist) => {
+        fetch(`https://torre-search-backend.onrender.com/user/searchUser/${value}`).then((response) => response.json()).then((namelist) => {
             const data = namelist.results;
             setResults(data)
         });
