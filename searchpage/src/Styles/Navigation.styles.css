@@ -1,0 +1,29 @@
+.nav-box {
+    background-color: #27292d;;
+    height: 3rem;
+}
+
+.menu-container {
+    width: 45%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #27292d;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container {
+  background-color: #595c61;
+  padding: 10px 20px;
+  width: 20rem;
+  text-decoration: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.btn-container div {
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+}
