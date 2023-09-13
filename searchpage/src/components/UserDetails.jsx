@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 const UserDetails = ({foundname}) => {
     const {name, username, professionalHeadline, imageUrl} = foundname;
 
-
     const saveRecent = async () => {
             console.log("Link was clicked to save in database ")
             const data = {
@@ -24,12 +23,10 @@ const UserDetails = ({foundname}) => {
                 });
                 const result = await response.json();
                 console.log("Success:", result);
-                // return res.send(result);
             } catch (error) {
                 console.error("Error:", error);
             }
     }
-
 
     return (
         <Link className="userlink"

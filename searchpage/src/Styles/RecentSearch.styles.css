@@ -1,0 +1,11 @@
+.recent-container {
+  display: flex;
+  height: 92vh;
+}
+
+.recent-display {
+  background-color: #010101;
+  width:  40%;
+}
+
+
