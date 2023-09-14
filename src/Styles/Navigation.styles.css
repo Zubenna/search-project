@@ -1,5 +1,5 @@
 .nav-box {
-    background-color: #27292d;;
+    background-color: #27292d;
     height: 3rem;
 }
 
@@ -21,9 +21,16 @@
   border-top-left-radius: 10px;
 }
 
+.btn-container:focus {
+  background-color:  #010101;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+
+}
+
 .btn-container div {
     font-size: 18px;
-    font-weight: bold;
-    color: aliceblue;
+    color: #fff;
     text-align: center;
 }

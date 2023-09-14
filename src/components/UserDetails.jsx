@@ -6,7 +6,6 @@ const UserDetails = ({foundname}) => {
     const {name, username, professionalHeadline, imageUrl} = foundname;
 
     const saveRecent = async () => {
-            console.log("Link was clicked to save in database ")
             const data = {
                 full_name: name,
                 username,

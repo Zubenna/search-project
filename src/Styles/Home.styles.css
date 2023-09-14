@@ -7,17 +7,17 @@
   
   .input-wrapper {
     width: 40%;
-    height: 2.5rem;
+    height: 3rem;
     border: none;
     border-radius: 40px;
     padding: 0 15px;
-    box-shadow: 0px 0px 8px #ddd;
-    background-color: white;
+    background-color: #010101;
     display: flex;
     align-items: center;
     margin: 0 auto;
+    border: 1px solid #fff;
   }
-  
+
   input {
     background-color: transparent;
     border: none;
@@ -25,6 +25,7 @@
     font-size: 1.25rem;
     width: 100%;
     margin-left: 5px;
+    color: #fff;
   }
   
   input:focus {
